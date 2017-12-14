@@ -1,5 +1,9 @@
-﻿# http://www.tuwebdeinformatica.com/foro/viewtopic.php?f=41&t=2545
-
+REM jt . 
+REM Referencia a este programa, consultar ... en caso de que no
+REM siga activa buscar programación bat con set 
+# http://www.tuwebdeinformatica.com/foro/viewtopic.php?f=41&t=2545
+REM Este es interesante, porque permite configurar variables, utilzando "set"
+REM 
 @echo off
 SETLOCAL ENABLEDELAYEDEXPANSION
 set /p d=Dividendo: 
