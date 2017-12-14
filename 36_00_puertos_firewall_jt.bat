@@ -1,3 +1,4 @@
+rem utilización de comandos para utilizar con la red (en estre caso puertos de firewall)
 @echo off
 rem ***
 rem JT. Diciembre 2014
