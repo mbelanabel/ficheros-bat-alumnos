@@ -1,7 +1,7 @@
 @ECHO OFF
 REM **
-REM ** J.T. / A¥O 1994
-REM ** LEER1.BAT ** a¤os
+REM ** J.T. / AÂ¥O 1994
+REM ** LEER1.BAT ** aÂ¤os
 REM **
 CLS
 :MAIN
@@ -16,9 +16,9 @@ GOTO HACER
 :ERRORF
 ECHO.
 ECHO     ******************************************
-ECHO     * ERROR - no se ha pasado ning£n fichero *
+ECHO     * ERROR - no se ha pasado ningÂ£n fichero *
 ECHO     *                                        *
-ECHO     *   Ejecuci¢n 'LEER1 ficheros_comodin'   *
+ECHO     *   EjecuciÂ¢n 'LEER1 ficheros_comodin'   *
 ECHO     ******************************************
 ECHO.
 GOTO FIN
