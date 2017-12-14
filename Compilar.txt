@@ -1,0 +1,24 @@
+* 
+ EN SU MOMENTO COMPILABA ARCHIVOS DE PROGRAMACIÓN 
+ DE BASE DE DATOS "foxbase" (año 2.000)
+ 
+*
+ estos 3 archivos
+ COMPILAR
+ LEERT
+ LEER1
+
+ se complementan cada uno de ellos, para hacer de forma recursiva el comando COMPILAR, 
+ aunque esta parte está más avanzada con el tema de POWERSHELL. 
+ se observan estructuras de control, y una iteracción con el comando FOR.
+
+*
+ el analisis de estos archivos conlleva estudiarlo más profundamente
+ 
+
+jt
+
+ sirve de base para buscar ideas en un comando recursivo, realizado tras 
+ un comodín de archivos.
+
+
