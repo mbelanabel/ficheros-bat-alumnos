@@ -1,0 +1,81 @@
+# Scrip con FUNCIONES
+# Nos solicitan un script interactivo que por medio de 2 arrays
+# (distribuciones, shell) permita hacer dos listas, una de las distribuciones
+# Linux/UNIX y otra lista de los tipos de shell mas conocidos.
+# (menu) El usuario podrá elegir cual de las dos listas se mostrarán.
+# ExFinal-Array-Patricia.sh
+# Autor: Patricia Davila Fernández
+# Fecha: 07-Marzo-2018
+# Key Word: declare -a, contador, for-do-done, read, case,
+#
+#
+#!/bin/bash
+#
+#Limpiar pantalla
+clear
+#
+# declarar arrays
+declare -a distribuciones=(debian red_hat ubuntu suse fedora uts openlinux)
+declare -a shell=(bash csh jsh rsh ksh rc tcsh)
+#
+#
+# bucle para sacar listado de distribuciones
+# contador a cero
+# crear la funcion
+function llamada_distribucion(){
+contador=0
+for valor in ${distribuciones[*]}
+do
+        echo "$valor"
+        contador='exp $contador + 1'
+done
+}
+#bucle listado shell
+#contador a cero
+# crear funcion 
+function llamada_shell(){
+contador=0
+for valora in ${shell[*]}
+do
+        echo "$valora"
+        contador='exp $contador + 1'
+done
+}
+#
+# crear menu para elegir que mostrar
+#
+echo
+echo "---------MENU---------"
+echo
+echo "1) Lista de distribuciones"
+echo "2) Lista de shell"
+echo "3) Salir"
+echo
+read opcion
+case $opcion in
+#
+# opcion de elegir listado de distribuciones
+1)
+echo "LISTADO DISTRIBUCIONES"
+echo
+#llamar a la funcion de distribucion
+llamada_distribucion
+;;
+#
+# opcion de elegir listado shell
+2)
+echo "LISTADO SHELL"
+echo
+# llamar a la funcion de shell
+llamada_shell
+;;
+# opcion de salir del menu
+3)
+echo "Gracias por la consulta"
+;;
+# opcion incorrecta
+*)
+echo "Opcion incorrecta"
+;;
+#
+esac
